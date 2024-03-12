@@ -1,0 +1,44 @@
+<html>
+    <head>
+        <title>Завдання 6</title>
+    </head>
+    <body>
+        <script>
+            let number = prompt("Введіть число від 1 до 7");
+            number = parseInt(number);
+            let day;
+            let error=0;
+            switch (number) {
+                case 1:
+                    day="понеділок";
+                    break;
+                case 2:
+                    day="вівторок";
+                    break;
+                case 3:
+                    day="середа";
+                    break;
+                case 4:
+                    day="четвер";
+                    break;
+                case 5:
+                    day="п'ятниця";
+                    break;
+                case 6:
+                    day="субота";
+                    break;
+                case 7:
+                    day="неділя";
+                    break;
+                default:
+                    error=1;
+                    break;
+            }
+            if (error) {
+                alert("Введене вами число виходить за діапазон.")
+            } else {
+                alert("Число " + number + " відповідає дню неділі під назвою " + day);
+            }
+        </script>
+    </body>
+</html>

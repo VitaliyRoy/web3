@@ -1,0 +1,72 @@
+<html>
+    <head>
+        <title>Завдання 4</title>
+    </head>
+    <body>
+        <script>
+            let month = prompt("Введіть число від 1 до 12.");
+            month = parseInt(month);
+            let season;
+            let month_name;
+            let error=0;
+            switch (month) {
+                case 1:
+                    month_name="Січень";
+                    break;
+                case 2:
+                    month_name="Лютий";
+                    break;
+                case 3:
+                    month_name="Березень";
+                    break;
+                case 4:
+                    month_name="Квітень";
+                    break;
+                case 5:
+                    month_name="Травень";
+                    break;
+                case 6:
+                    month_name="Червень";
+                    break;
+                case 7:
+                    month_name="Липень";
+                    break;
+                case 8:
+                    month_name="Серпень";
+                    break;
+                case 9:
+                    month_name="Вересень";
+                    break;
+                case 10:
+                    month_name="Жовтень";
+                    break;
+                case 11:
+                    month_name="Листопад";
+                    break;
+                case 12:
+                    month_name="Грудень";
+                    break; 
+                default:
+                    error=1; 
+            }
+            if(month===12 || month===1 || month===2){
+                season="Зима";
+            } 
+            else if (month===3 || month===4 || month===5) {
+                season="Весна";
+            }
+            else if (month===6 || month===7 || month===8) {
+                season="Літо";
+            }
+            else if (month===9 || month===10 || month===11) {
+                season="Осінь";
+            }
+
+            if (error) {
+                alert("Введене вами число виходить за діапазон.")
+            } else {
+                alert("Введене вами число відповідає місяцю під назвою " + month_name + ". Пора року - " + season);
+            }
+        </script>
+    </body>
+</html>
